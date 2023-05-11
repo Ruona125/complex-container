@@ -39,6 +39,7 @@ services:
     volumes:
       - /app/node_modules
       - ./client:/app
+    mem_limit: 512m
   worker:
     build:
       dockerfile: Dockerfile.dev
